@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  .content
+    if content
+      !=content
+    else
+      h2 1. Install
+
+      p Global installation (for use as a command-line tool):
+      pre npm install csscomb -g
+
+      p Local installation (for use as a command-line tool within current directory):
+      pre npm install csscomb
+
+      p To install as a project dependency (the package will appear in your dependencies):
+      pre npm install csscomb --save
+
+      p To install as a dev dependency (the package will appear in your devDependencies):
+      pre npm install csscomb --save-dev
+
+      h2 2. <a href='/docs/configuration'>Configure</a>
+
+      p There are a number of ways to configure CSScomb:
+      ul
+        li Use one of predefined configs
+        li Put <code>.csscomb.json</code> file in the project root.
+        li Set path to config's file
+        li Use <code>.css</code> file as a template
+
+      h2 3. Use
+
+      h3: a(href='/docs/usage-cli') Command Line
+      pre csscomb assets/css
+
+      h3: a(href='/docs/usage-node') Node.js module
+      pre.
+        var Comb = require('csscomb');
+        var comb = new Comb('zen');
+        comb.processPath('assets/css');
+

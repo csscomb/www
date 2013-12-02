@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title
+      |CSScomb
+      if title
+        |: #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(class=id)
+    -// Header
+    .header
+      .content
+        if id != 'index'
+          a.header-title(href='/') CSScomb
+        a.header-link(href='/docs', class=(id == 'docs' ? 'is-active' : '')) Getting started
+        a.header-link(href='/online', class=(id == 'demo' ? 'is-active' : '')) Try online
+
+    -// Content
+    block content
+
+    a.github-ribbon(href="https://github.com/csscomb/csscomb.js")
+      img(src="/img/github.png", alt="Fork me on GitHub", width=149, height=149)
