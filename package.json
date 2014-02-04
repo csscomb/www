@@ -8,6 +8,7 @@
     "jade": "1.1.5",
     "marked": "~0.2.10"
   },
+  "domains": ["csscomb.com"],
   "engines": {
     "node": "0.10.x"
   },
