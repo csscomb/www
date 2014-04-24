@@ -25,9 +25,15 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+/*
 // Error page:
 app.use(function(req, res, next){
+  res.redirect('/');
   res.status(404).render('error', { title: 'Page not found' });
+});
+ */
+app.use(function(req, res, next){
+  res.redirect('/');
 });
 
 // Settings for documentation parsing:
@@ -39,6 +45,7 @@ app.param('doc', function (req, res, next, id) {
     next();
 });
 
+/*
 // Routes:
 app.get('/', function(req, res){
   res.render('index', { id: 'index', title: 'The Greatest tool for making CSS beautiful' });
@@ -60,6 +67,7 @@ app.get('/online', function(req, res){
   res.render('demo', { id: 'demo', title: 'Try online', configs: configs });
 });
 app.post('/online', comb);
+*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
