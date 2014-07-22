@@ -84,9 +84,6 @@ pre code {
     margin: 0 0 30px -100px;
     padding: 30px 0;
     }
-.splash .content {
-    width: 1000px;
-    }
 .splash hgroup {
     display: inline-block;
     vertical-align: middle;
@@ -102,13 +99,13 @@ pre code {
     }
 
 .header {
-    background-image: linear-gradient(120deg, #e48632 10%, darkred);
+    background-image: linear-gradient(120deg, #e48632 10%, darkred, #302013);
     position: relative;
     }
 .header-title {
     padding: 15px 10px;
+    margin: 0 0 0 -10px;
     font-size: 1.6em;
-    font-weight: bold;
     float: left;
     color: #333;
     text-decoration: none;
@@ -302,6 +299,10 @@ pre code {
     margin: 0 0 20px 0;
     cursor: pointer;
     width: calc(50% - 22px - 10px);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .option-variant:hover {
     border-color: #999;
@@ -316,9 +317,9 @@ pre code {
     padding-bottom: 0;
 }
 .option-variant mark {
-    background: yellow;
+    background: #ffc04c;
     padding: 1px;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 .options-result {
     border: 1px solid #ccc;
@@ -331,6 +332,7 @@ pre code {
     padding: 6px 10px;
     border-radius: 3px;
     font-family: Consolas, Courier, monospace;
+    resize: none;
 }
 .option-progress {
     text-align: center;

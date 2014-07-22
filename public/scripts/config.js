@@ -407,9 +407,10 @@
         var option = document.getElementById('option');
         option.innerHTML = '';
         option.appendChild(el);
+        el.style.height = el.scrollHeight - 10 + 'px';
 
         var title = document.getElementById('title');
-        title.innerHTML = 'Copy the config from here and save it as <code>.csscomb.json</code> in project\'s dir:';
+        title.innerHTML = 'Copy the config from here &darr; and save it as <code>.csscomb.json</code> in your project\'s dir:';
 
         document.getElementById('progress').innerHTML = '';
     }
