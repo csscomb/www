@@ -1,6 +1,6 @@
 {
   "name": "csscomb-www",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "csscomb": "~3.0.0",
