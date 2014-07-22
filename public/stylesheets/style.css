@@ -264,17 +264,18 @@ pre code {
     }
 
 .plugins {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
 .plugins-link {
     width: 100px;
     height: 100px;
-    margin: 0 0 0 65px;
-    padding: 5px;
+    margin: 0;
+    padding: 15px;
     border: 2px solid #fff;
     display: inline-block;
-    vertical-align: middle;
-    text-align: middle;
+    text-align: center;
     }
 .plugins-link:first-child {
     margin: 0;
@@ -283,7 +284,7 @@ pre code {
     border-color: rgba(0,0,0,0.2);
     }
 .plugins-link-humble {
-    padding: 10px 5px;
+    padding: 20px 15px;
     height: 90px;
     }
 
