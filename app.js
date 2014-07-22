@@ -47,10 +47,10 @@ app.param('doc', function (req, res, next, id) {
 
 // Routes:
 app.get('/', function(req, res){
-  res.render('index', { id: 'index', title: 'The Greatest tool for making CSS beautiful' });
+  res.render('index', { id: 'index', title: 'Makes your code beautiful' });
 });
 app.get('/config', function(req, res){
-  res.render('config', { id: 'config', title: 'Generate config' });
+  res.render('config', { id: 'config', title: 'Build config' });
 });
 app.get('/docs', function(req, res){
   res.render('docs', { id: 'docs', title: 'Getting started' });
