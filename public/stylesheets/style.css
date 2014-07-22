@@ -1,10 +1,15 @@
+html {
+    height: 100%;
+}
 body {
+    min-height: calc(100% - 100px);
     min-width: 1100px;
     margin: 0;
     font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     background: #fff;
     position: relative;
+    padding: 0 0 100px;
     }
 h1 {
     padding: 10px 0;
@@ -340,3 +345,28 @@ pre code {
 #step {
     padding: 0 3px;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin: 50px 0 0;
+    background: linear-gradient(120deg, #302013, darkred 60%, #e48632);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-link.footer-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0 0 20px;
+    padding: 20px 10px;
+    display: block;
+    font-size: 1.1em;
+}
+.footer-link.footer-link:hover,
+.footer-link.footer-link:active {
+    background: rgba(0, 0, 0, 0.15);
+}
+
