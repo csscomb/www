@@ -266,8 +266,11 @@ pre code {
     }
 
 .plugins {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-items: center;
     align-items: center;
     }
 .plugins-link {
@@ -291,8 +294,11 @@ pre code {
     }
 
 #option {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .option-variant {
@@ -313,8 +319,11 @@ pre code {
     border-color: #999;
 }
 .option-variant_null {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 .option-variant pre {
@@ -351,7 +360,9 @@ pre code {
     bottom: 0;
     margin: 50px 0 0;
     background: linear-gradient(120deg, #302013, darkred 60%, #e48632);
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     width: 100%;
 }
