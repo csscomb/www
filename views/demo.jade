@@ -1,28 +1,6 @@
 extends layout
 
 block content
-  .demo-settings#settings
-    .demo-settings-form
-      h3 Settings
-      label.demo-option
-        |Syntax:
-        select#syntax
-          option(value='css') CSS
-          option(value='scss') SCSS
-          option(value='less') LESS
-      .demo-option
-        label Config:
-        select#config-name
-          option(value='csscomb') csscomb
-          option(value='zen') zen
-          option(value='yandex') yandex
-          option(value='custom') custom
-      textarea#csscomb-config.demo-textarea.demo-config(disabled=true)= configs.csscomb
-      textarea#yandex-config.demo-textarea.demo-config.is-hidden(disabled=true)= configs.yandex
-      textarea#zen-config.demo-textarea.demo-config.is-hidden(disabled=true)= configs.zen
-      textarea#custom-config.demo-textarea.demo-config.is-hidden
-      button#hide-settings.demo-button(type='button') Save
-
   .content
     .demo-half
       label Paste your code here &darr;
@@ -32,47 +10,14 @@ block content
       textarea.demo-textarea#output(readonly=true) #{output}
   .demo-footer
     button.demo-button#comb Comb it!
-    #show-settings.demo-settings-link Settings
 
   script.
-    var settings = document.getElementById('settings');
-    var settingsClassName = 'demo-settings';
-    var config = document.getElementById('config');
-    var configClass = 'demo-textarea demo-config';
-
-    // Show settings:
-    document.getElementById('show-settings').addEventListener('click', function(e) {
-      settings.className = settingsClassName + ' is-active';
-    });
-
-    // Hide settings:
-    document.getElementById('hide-settings').addEventListener('click', function(e) {
-      settings.className = settingsClassName;
-    });
-
-    // Show config:
-    document.getElementById('config-name').addEventListener('change', function(e) {
-      var configs = document.getElementsByClassName('demo-config');
-      for (var i = configs.length; i--;) {
-        configs[i].className = configClass + ' is-hidden';
-      }
-      document.getElementById(this.value + '-config').className = configClass;
-    });
-
     // Click magic button:
     document.getElementById('comb').addEventListener('click', function(e) {
       e.preventDefault();
 
       // Input:
       var data = 'input=' + document.getElementById('input').value;
-      // Syntax:
-      data += '&syntax=' + document.getElementById('syntax').value;
-      // Config:
-      if (document.getElementById('config-name').value !== 'custom') {
-          data += '&configName=' + document.getElementById('config-name').value;
-      } else {
-          data += '&config=' + document.getElementById('custom-config').value;
-      }
 
       // Request:
       var req = new XMLHttpRequest();

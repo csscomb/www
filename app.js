@@ -4,7 +4,7 @@ var express = require('express'),
     marked = require('marked'),
     path = require('path'),
     comb = require('./comb'),
-    Comb = require('csscomb');
+    CSScomb = require('csscomb');
 
 var app = express();
 
@@ -60,13 +60,7 @@ app.get('/docs/:doc', function(req, res, next){
   else res.render('docs', { id: 'docs', content: marked(req.doc) });
 });
 app.get('/online', function(req, res){
-    var csscomb = new Comb();
-    var configs = {
-        csscomb: JSON.stringify(csscomb.getConfig('csscomb'), null, 4),
-        yandex: JSON.stringify(csscomb.getConfig('yandex'), null, 4),
-        zen: JSON.stringify(csscomb.getConfig('zen'), null, 4)
-    };
-  res.render('demo', { id: 'demo', title: 'Try online', configs: configs });
+  res.render('demo', { id: 'demo', title: 'Try online' });
 });
 app.post('/online', comb);
 
