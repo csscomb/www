@@ -49,6 +49,9 @@ app.param('doc', function (req, res, next, id) {
 app.get('/', function(req, res){
   res.render('index', { id: 'index', title: 'The Greatest tool for making CSS beautiful' });
 });
+app.get('/config', function(req, res){
+  res.render('config', { id: 'config', title: 'Generate config' });
+});
 app.get('/docs', function(req, res){
   res.render('docs', { id: 'docs', title: 'Getting started' });
 });

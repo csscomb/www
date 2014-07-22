@@ -16,7 +16,6 @@ h2 {
     line-height: 1.7;
     font-size: 1.6em;
     font-weight: normal;
-    text-align: center;
     }
 h2:first-of-type {
     margin-top: 0.5em;
@@ -26,7 +25,6 @@ hgroup h2:first-of-type {
     margin-top: -1em;
     }
 h3 {
-    text-align: center;
     font-size: 1.35em;
     margin: 1.5em 0 1em;
     font-weight: normal;
@@ -288,3 +286,38 @@ pre code {
     padding: 10px 5px;
     height: 90px;
     }
+
+#option {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.option-variant {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    width: calc(50% - 22px - 10px);
+}
+.option-variant:nth-child(2n) {
+}
+.option-variant:hover {
+    border-color: #000;
+}
+.options-result {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 50%;
+    height: 400px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-family: Consolas, Courier, monospace;
+}
+#step {
+    padding: 0 3px;
+}
