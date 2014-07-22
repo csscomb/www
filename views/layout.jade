@@ -12,8 +12,9 @@ html
       .content
         if id != 'index'
           a.header-title(href='/') CSScomb
-        a.header-link(href='/docs', class=(id == 'docs' ? 'is-active' : '')) Getting started
         a.header-link(href='/online', class=(id == 'demo' ? 'is-active' : '')) Try online
+        a.header-link(href='/config', class=(id == 'config' ? 'is-active' : '')) Build config
+        a.header-link(href='/docs', class=(id == 'docs' ? 'is-active' : '')) Getting started
 
     -// Content
     block content
