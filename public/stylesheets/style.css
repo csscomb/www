@@ -293,6 +293,7 @@ pre code {
     flex-wrap: wrap;
 }
 .option-variant {
+    background: #eee8d5;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
@@ -301,10 +302,22 @@ pre code {
     cursor: pointer;
     width: calc(50% - 22px - 10px);
 }
-.option-variant:nth-child(2n) {
-}
 .option-variant:hover {
-    border-color: #000;
+    border-color: #999;
+}
+.option-variant_null {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option-variant pre {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.option-variant mark {
+    background: yellow;
+    padding: 1px;
+    border-radius: 1px;
 }
 .options-result {
     border: 1px solid #ccc;
@@ -317,6 +330,9 @@ pre code {
     padding: 6px 10px;
     border-radius: 3px;
     font-family: Consolas, Courier, monospace;
+}
+.option-progress {
+    text-align: center;
 }
 #step {
     padding: 0 3px;
