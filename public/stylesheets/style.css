@@ -280,18 +280,6 @@ pre code {
     color: #333;
 }
 
-.github-ribbon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
-}
-@media (max-width: 1200px) {
-    .github-ribbon {
-        display: none;
-    }
-}
-
 .plugins {
     display: -webkit-flex;
     display: flex;
