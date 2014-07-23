@@ -37,7 +37,7 @@ p {
     line-height: 1.5;
 }
 a:link, a:visited {
-    color: #e48632;
+    color: #e74c3c;
 }
 a:hover, a:active {
     color: #000;
@@ -48,9 +48,9 @@ ul, ol {
 pre {
     overflow: auto;
     padding: 6px 10px;
-    border: 1px solid #eee8d5;
+    border: 1px solid #ecf0f1;
     border-radius: 3px;
-    background: #eee8d5;
+    background: #ecf0f1;
     font-size: 13px;
     font-family: Consolas, Courier, monospace;
     line-height: 19px;
@@ -59,7 +59,7 @@ code {
     margin: 0 2px;
     padding: 0 5px;
     border-radius: 3px;
-    background: #eee8d5;
+    background: #ecf0f1;
     font-family: Consolas, Courier, monospace;
 }
 pre code {
@@ -71,7 +71,7 @@ pre code {
 }
 
 .index {
-    background: #eee8d5;
+    background: #ecf0f1;
 }
 
 .comb {
@@ -123,7 +123,7 @@ pre code {
 
 .header {
     position: relative;
-    background-image: linear-gradient(120deg, #e48632 10%, darkred, #302013);
+    background: #e74c3c;
 }
 .header-title {
     float: left;
@@ -198,10 +198,10 @@ pre code {
 .demo-button {
     margin: 1em 0;
     padding: 5px 15px;
-    border: 1px solid #e48632;
+    border: 1px solid #e74c3c;
     border-radius: 3px;
     background: #fff;
-    color: #e48632;
+    color: #e74c3c;
     font-size: 1.1em;
     cursor: pointer;
 }
@@ -214,7 +214,7 @@ pre code {
     cursor: pointer;
 }
 .demo-button:hover, .demo-button:active {
-    background-color: #e48632;
+    background-color: #e74c3c;
     color: #fff;
 }
 .demo-settings {
@@ -335,7 +335,7 @@ pre code {
     padding: 10px;
     width: calc(50% - 22px - 10px);
     border: 1px solid #ccc;
-    background: #eee8d5;
+    background: #ecf0f1;
     vertical-align: top;
     cursor: pointer;
 
@@ -368,7 +368,6 @@ pre code {
 .option-variant mark {
     padding: 1px;
     border-radius: 2px;
-    background: #ffc04c;
 }
 .options-result {
     overflow: auto;
@@ -403,7 +402,7 @@ pre code {
     display: flex;
     margin: 50px 0 0;
     width: 100%;
-    background: linear-gradient(120deg, #302013, darkred 60%, #e48632);
+    background: #415b76;
 
     -webkit-justify-content: center;
     justify-content: center;
