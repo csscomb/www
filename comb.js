@@ -8,6 +8,8 @@ module.exports = function(req, res){
     var acceptedReferers = [
         'http://localhost:4444/online',
         'http://csscomb.jit.su/online',
+        'http://csscomb.herokuapp.com/online',
+        'https://csscomb.herokuapp.com/online',
         'http://csscomb.com/online',
         'http://csscomb.ru/online'
     ];
