@@ -7,11 +7,9 @@ module.exports = function(req, res){
     // GATE:
     var acceptedReferers = [
         'http://localhost:4444/online',
-        'http://csscomb.jit.su/online',
         'http://csscomb.herokuapp.com/online',
         'https://csscomb.herokuapp.com/online',
         'http://csscomb.com/online',
-        'http://csscomb.ru/online'
     ];
     if (acceptedReferers.indexOf(req.headers.referer) < 0)
         res.send('Don\'t be evil');
