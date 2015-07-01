@@ -6,7 +6,8 @@
     "csscomb": "3.x.x",
     "express": "3.4.6",
     "jade": "1.1.5",
-    "marked": "~0.2.10"
+    "marked": "~0.2.10",
+    "nodemailer": "1.4.x"
   },
   "domains": [
     "csscomb.com",
