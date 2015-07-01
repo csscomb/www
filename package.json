@@ -10,8 +10,7 @@
     "nodemailer": "1.4.x"
   },
   "domains": [
-    "csscomb.com",
-    "csscomb.ru"
+    "csscomb.com"
   ],
   "engines": {
     "node": "0.10.x"
