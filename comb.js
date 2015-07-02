@@ -5,7 +5,7 @@ function reportError(subject, text) {
   transporter.sendMail({
     from: 'bugs@csscomb.com',
     to: 'tonyganch+csscomb@gmail.com',
-    subject: subject,
+    subject: subject + ' ' + Date.now(),
     text: text,
     html: '<pre>' + text + '</pre>'
   });
