@@ -40,7 +40,9 @@ module.exports = function(req, res){
     try {
         output = comb.processString(input);
     } catch (e) {
-        output = e.message;
+        output = 'Something went wrong.\nPlease make sure that you\'re trying ' +
+          'to comb a valid CSS (not Sass or Less).\nOr maybe you forgot ' +
+          'a closing brace?\n\nHere is an error message:\n\n' + e.message;
         reportParsingError(input, e);
     }
 
